@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { GlobalS } from './components/header/header.styled'
 import Home from "./pages/home/Home"
 import Projetos from './pages/projetos/Projetos'
 import Sobre from './pages/sobre/Sobre'
+import { GlobalS } from "./components/header/header.styled"
 
 export default function AppRoutes() {
   return (
