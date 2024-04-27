@@ -11,9 +11,9 @@ export default function Home() {
         <Main>
           <Content>
             <div>
-            <h2>Olá</h2>
+            <h1>Seja bem-vinde/o/a! Esse é meu portifólio</h1>
             <h3>
-              Um bom programador é aquele que cosnsegue entender sua ferramenta e dominá-la sem muitos problemas
+              "Um bom programador é aquele que cosnsegue entender sua ferramenta e dominá-la sem muitos problemas."
             </h3>
             </div>
           <img src={pic} alt="" />

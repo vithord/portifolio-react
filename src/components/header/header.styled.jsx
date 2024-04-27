@@ -58,21 +58,29 @@ export const Bar = styled.nav`
         height: 100%;
     }
     a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         // color: #b17c7a;
         color: white;
         text-decoration: none;
         font-size: 1.3rem;
         cursor: pointer;
+        border: solid 2px #ff35e4;
+        border-radius: 17px;
+        width: 100%;
+        height: 90%;
+        transition-duration: 300ms;
     }
 `
     
 export const List = styled.li`
+    ${Center};
     height: 7.9vh;
     width: 65%;
-    // border: solid 1px #b17c7a;
-    border: solid 2px #ff35e4;
-    border-radius: 17px;
-    ${Center};
+    a:hover{
+        background-color: #ff35e4;
+    }
 `
 
 export const Sites = styled.section`

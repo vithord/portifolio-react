@@ -14,7 +14,7 @@ export default function Card({image, title, desc, link, link1, name}) {
       <a href={link}>
         Github | {name}
       </a>
-      <a href={link1}>Deploy of {name}</a>
+      <a href={link1}>Deploy | {name}</a>
     </Carousel>
     </>
   )

@@ -2,17 +2,16 @@ import styled from 'styled-components'
 import { Center } from '../header/header.styled'
 
 export const Carousel = styled.div`
-    border: solid 1px red;
     ${Center}
     flex-direction: column;
     justify-content: space-evenly;
-    width: 35%;
-    height: 80vh;
+    padding: 20px;
+    width: 100%;
+    height: 90vh;
     text-align: center;
     img{
-        border: solid 1px red;
-        width: 100%;
-        height: 50%;
+        width: 50%;
+        height: 55%;
     }
     a{
         ${Center}
