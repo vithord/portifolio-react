@@ -18,10 +18,10 @@ export const Center = css`
     justify-content: center;
 `
 
-export const AppBox = styled.div`
+export const AppBox = styled.section`
     height: 100vh;
     width: 100%;
-    background: linear-gradient(17deg, rgba(0,0,0,1) 40%, #b700ff 100%);
+    background: linear-gradient(17deg, rgba(0,0,0,1) 30%, #b700ff 100%);
     color: #e2d8cf;
     display: flex;
 `

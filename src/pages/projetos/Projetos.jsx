@@ -2,8 +2,8 @@ import Card from "../../components/cards/Card"
 import Header from "../../components/header/Header"
 import * as S from '../../components/header/header.styled'
 import { Cards, Content, Main } from "./styled.projetos"
-import nextLogin from '../../assets/project-image/site1-overview.png'
-import mcdonalds from '../../assets/project-image/site2-overview.png'
+import nextLogin from '../../assets/project-image/next-login-overview.png'
+import mcdonalds from '../../assets/project-image/static-mcdonald-overview.png'
 import './slider.style.css'
 
 import 'swiper/swiper-bundle.css'
@@ -21,18 +21,19 @@ export default function Projetos() {
       <Content>
         <h1>Projetos já feitos</h1>
         <Cards>
-          <Swiper modules={[Navigation, Pagination]}
+          <Swiper modules={[Autoplay, Navigation, Pagination]}
             spaceBetween={50}
             slidesPerView={1}
             navigation
-            
+            autoplay
+            loop
             pagination={{clickable: true}}
           >
           <SwiperSlide>
             <Card
               image={mcdonalds}
-              title={'Projeto'}
-              desc={'Página estática do Mc Donalds que quando clicado em algum item, troca o item principal para o item clicado'}
+              title={"Projeto Static Mc donald's"}
+              desc={'Página estática do Mc Donalds que quando clicado em algum item, troca o item principal para o item que foi clicado.'}
               link={'https://github.com/vithord/mc-donalds'}
               link1={'https://mc-donal.netlify.app'}
               name={'Mc Donalds'}
@@ -42,8 +43,8 @@ export default function Projetos() {
           <SwiperSlide>
             <Card
               image={nextLogin}
-              title={'Projeto login next.js'}
-              desc={'projeto de login e cadstro com página segura usando cookies, acessível apenas quando o usuário está cadastrado'}
+              title={'Projeto Login next.js'}
+              desc={'projeto de login e cadstro com página segura usando cookies, acessível apenas quando o usuário está cadastrado.'}
               link={'https://github.com/vithord/login-nextjs'}
               link1={'https://nextprojectlogin.netlify.app'}
               name={'projeto login'}
